@@ -4,31 +4,95 @@
     <meta charset="UTF-8">
     <title>Madhu Sudhan Subedi</title>
     <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"/>
+    <link href='//fonts.googleapis.com/css?family=Lusitana:400,700' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Merriweather+Sans:400,300,300italic,400italic,700italic,700,800,800italic' rel='stylesheet' type='text/css'>
 </head>
 <body>
     <header class="header">
         <div class="header-container">
             <div class="row">
-                <nav class="nav">
-                    <ul>
-                        <li><a href="">About Me</a></li>
-                        <li><a href="">Blog</a></li>
-                        <li><a href="">Contact</a></li>
-                    </ul>
-                </nav><!-- End of Nav -->
+                <div class="navigation" role="banner">
+                    <div class="navigation-wrapper">
+                        <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">MENU</a>
+                        <nav role="navigation">
+                            <ul id="js-navigation-menu" class="navigation-menu show">
+                                <li class="nav-link"><a href="javascript:void(0)">About Me</a></li>
+                                <li class="nav-link"><a href="javascript:void(0)">Blog</a></li>
+                                <li class="nav-link"><a href="javascript:void(0)">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
                 <div class="image">
                     <img src="images/wordpress.png"/>
                     <!--<div class="clear"></div>-->
                     <h2>Madhu Sudhan Subedi</h2>
                 </div>
                 <div class="email">
-                    <div class="email-icon">
-                        <i class="fa fa-email"></i>
-                        <p>madhusudhansubedi4@gmail.com</p>
-                    </div>
+                    <p class="email-icon">
+                        <i class="ion ion-email"></i>
+                        madhusudhansubedi4@gmail.com
+                    </p>
                 </div> <!-- End of Email -->
             </div><!-- End of Row -->
         </div>
     </header>
+
+    <div class="articles">
+
+            <article class="type-system-serif">
+                <p class="type">Article Type</p>
+                <h1>Article Heading</h1>
+                <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, perferendis! Odit quisquam <code>code block</code> dicta illum ipsa quod natus iure aliquid necessitatibus veritatis, itaque magnam aliquam, dolorum nostrum nemo, explicabo perspiciatis nobis!</h2>
+                <p class="date">30 Mar 2014</p>
+                <p><span>Lorem ipsum dolor sit amet</span>, consectetur adipisicing elit. Consequatur a, ullam, voluptatum incidunt neque doloremque vel inventore distinctio laudantium harum</a> illo quam nulla dolor alias iure impedit! Accusamus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, a, ullam, voluptatum incidunt neque porro numquam doloremque vel inventore distinctio laudantium harum illo quam nulla dolor alias iure impedit.
+                    <a href="javascript:void(0)" class="read-more">Read More <span>&rsaquo;</span></a>
+                </p>
+                <h3>Subheading lorem</h3>
+                <p><span>Consequatur ullam, voluptatum</span> incidunt neque porro numquam doloremque vel inventore distinctio laudantium harum illo quam nulla dolor alias iure impedit. Accusamus. Consequatur, a, ullam, voluptatum incidunt neque porro numquam doloremque vel inventore distinctio laudantium harum illo quam nulla dolor alias iure impedit! Accusamus.</p>
+                <hr>
+                <p class="author">Author Name</p>
+            </article>
+    </div>
+
+    <!--<div class="wrapper-for-content-outside-of-footer">
+   Uncomment this whole section for a sticky footer. The content of the page should be inside of this .wrapper-for-content-outside-of-footer
+</div>-->
+
+    <footer class="footer-2" role="contentinfo">
+        <ul>
+            <li><a href="javascript:void(0)">About Me</a></li>
+            <li><a href="javascript:void(0)">Blog</a></li>
+            <li><a href="javascript:void(0)">Contact</a></li>
+        </ul>
+
+        <div class="footer-secondary-links">
+
+            <ul class="footer-social">
+                <li><a href="https://www.facebook.com/sudhan.subedi.31">
+                    <i class="ion ion-social-facebook-outline"></i>
+                </a></li>
+                <li><a href="https://twitter.com/SudhanSubedi">
+                    <i class="ion ion-social-twitter-outline"></i>
+                </a></li>
+                <li><a href="https://plus.google.com/u/0/118039852631486740195/posts">
+                    <i class="ion ion-social-googleplus-outline"></i>
+                </a></li>
+                <li><a href="https://github.com/madhusudhan1234">
+                    <i class="ion ion-social-github-outline"></i>
+                </a></li>
+                <li><a href="javascript:void(0)">
+                    <i class="ion ion-social-linkedin-outline"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
