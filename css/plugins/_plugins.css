@@ -1,0 +1,10 @@
+/* Importing Bourbon and neat Library */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}

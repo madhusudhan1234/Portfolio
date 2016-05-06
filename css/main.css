@@ -1,0 +1,123 @@
+/* Importing Bourbon and neat Library */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+/* Css For Reset Css */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Css File For Header Css */
+body {
+  background-color: #f5f5f5;
+}
+
+.clear {
+  clear: both;
+}
+
+.header {
+  background-image: url(/images/holiday-1354563_1920.png);
+  background-repeat: no-repeat;
+  padding: 30px 0 30px 0;
+}
+
+.header-container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header-container::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.header-container .row {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+}
+
+.header-container .row:last-child {
+  margin-right: 0;
+}
+
+.header-container .row .image {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  text-align: center;
+}
+
+.header-container .row .image:last-child {
+  margin-right: 0;
+}
+
+.header-container .row .image img {
+  border-radius: 100px;
+  border: 5px solid rgba(255, 255, 255, 0.3);
+  border-bottom-color: #4294f0;
+  border-top-color: #ffffff;
+  border-left-color: #eeeeee;
+  border-right-color: gainsboro;
+}
+
+.header-container .row .image h2 {
+  text-shadow: #4294f0;
+  color: #ffffff;
+  padding-top: 0;
+}
+
+.header-container .row .nav {
+  background-color: rgba(0, 0, 0, 0.5);
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%;
+}
+
+.header-container .row .nav:last-child {
+  margin-right: 0;
+}
+
+.header-container .row .nav ul {
+  list-style-type: none;
+}
+
+.header-container .row .nav ul li {
+  display: inline-block;
+  list-style: none;
+  padding-right: 35px;
+}
+
+.header-container .row .nav ul li a {
+  font-size: 13px;
+  color: #f5f5f5;
+}
+
+.header-container .row .email {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%;
+}
+
+.header-container .row .email:last-child {
+  margin-right: 0;
+}
+
+.header-container .row .email .email-icon {
+  text-align: right;
+}

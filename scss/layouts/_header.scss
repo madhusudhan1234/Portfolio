@@ -1,0 +1,61 @@
+/* Css File For Header Css */
+body{
+  background-color:#f5f5f5;
+}
+.clear{
+  clear: both;
+}
+.header{
+  background-image: url(/images/holiday-1354563_1920.png);
+  background-repeat: no-repeat;
+  padding:30px 0 30px 0;
+}
+.header-container{
+  @include outer-container(1200px);
+  .row{
+    @include span-columns(12);
+    .image{
+      @include span-columns(6 of 12);
+      text-align: center;
+      img{
+        border-radius: 100px;
+        border:5px solid rgba(255,255,255,0.3);
+        border-bottom-color: #4294f0;
+        border-top-color: #ffffff;
+        border-left-color: #eeeeee;
+        border-right-color: gainsboro;
+      }
+      h2{
+        text-shadow: #4294f0;
+        color:#ffffff;
+        padding-top:0;
+      }
+    }
+
+    .nav{
+      background-color: rgba(0,0,0,0.5);
+      @include span-columns(3 of 12);
+      ul{
+        list-style-type: none;
+        li{
+          display:inline-block;
+          list-style: none;
+          padding-right:35px;
+          a{
+            font-size: 13px;
+            color:#f5f5f5;
+          }
+        }
+      }
+    }
+
+    .email{
+      @include span-columns(3 of 12);
+      .email-icon{
+        text-align: right;
+      }
+    }
+
+  }
+
+}
