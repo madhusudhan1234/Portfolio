@@ -9,7 +9,7 @@
     <link href='//fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
     <link href='//fonts.googleapis.com/css?family=Merriweather+Sans:400,300,300italic,400italic,700italic,700,800,800italic' rel='stylesheet' type='text/css'>
 </head>
-<body>
+<body ng-app="madhuApp">
     <header class="header">
         <div class="header-container">
             <div class="row">
@@ -18,17 +18,17 @@
                         <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">MENU</a>
                         <nav role="navigation">
                             <ul id="js-navigation-menu" class="navigation-menu show">
-                                <li class="nav-link"><a href="javascript:void(0)">About Me</a></li>
-                                <li class="nav-link"><a href="javascript:void(0)">Blog</a></li>
-                                <li class="nav-link"><a href="javascript:void(0)">Contact</a></li>
+                                <li class="nav-link"><a href="#about">About Me</a></li>
+                                <li class="nav-link"><a href="#blog">Blog</a></li>
+                                <li class="nav-link"><a href="#contact">Contact</a></li>
                             </ul>
                         </nav>
                     </div>
                 </div>
                 <div class="image">
                     <img src="images/wordpress.png"/>
-                    <!--<div class="clear"></div>-->
                     <h2>Madhu Sudhan Subedi</h2>
+                    <p>Thinker / Designer / Developer</p>
                 </div>
                 <div class="email">
                     <p class="email-icon">
@@ -40,32 +40,14 @@
         </div>
     </header>
 
-    <div class="articles">
+    <div class="page {{ pageClass }}" ng-view></div>
 
-            <article class="type-system-serif">
-                <p class="type">Article Type</p>
-                <h1>Article Heading</h1>
-                <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, perferendis! Odit quisquam <code>code block</code> dicta illum ipsa quod natus iure aliquid necessitatibus veritatis, itaque magnam aliquam, dolorum nostrum nemo, explicabo perspiciatis nobis!</h2>
-                <p class="date">30 Mar 2014</p>
-                <p><span>Lorem ipsum dolor sit amet</span>, consectetur adipisicing elit. Consequatur a, ullam, voluptatum incidunt neque doloremque vel inventore distinctio laudantium harum</a> illo quam nulla dolor alias iure impedit! Accusamus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, a, ullam, voluptatum incidunt neque porro numquam doloremque vel inventore distinctio laudantium harum illo quam nulla dolor alias iure impedit.
-                    <a href="javascript:void(0)" class="read-more">Read More <span>&rsaquo;</span></a>
-                </p>
-                <h3>Subheading lorem</h3>
-                <p><span>Consequatur ullam, voluptatum</span> incidunt neque porro numquam doloremque vel inventore distinctio laudantium harum illo quam nulla dolor alias iure impedit. Accusamus. Consequatur, a, ullam, voluptatum incidunt neque porro numquam doloremque vel inventore distinctio laudantium harum illo quam nulla dolor alias iure impedit! Accusamus.</p>
-                <hr>
-                <p class="author">Author Name</p>
-            </article>
-    </div>
-
-    <!--<div class="wrapper-for-content-outside-of-footer">
-   Uncomment this whole section for a sticky footer. The content of the page should be inside of this .wrapper-for-content-outside-of-footer
-</div>-->
 
     <footer class="footer-2" role="contentinfo">
         <ul>
-            <li><a href="javascript:void(0)">About Me</a></li>
-            <li><a href="javascript:void(0)">Blog</a></li>
-            <li><a href="javascript:void(0)">Contact</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
 
         <div class="footer-secondary-links">
@@ -90,9 +72,14 @@
             </ul>
         </div>
     </footer>
-
-
     <script src="js/jquery.js"></script>
     <script src="js/main.js"></script>
+
+    <!-- SPELLS -->
+    <!-- load angular and angular route via CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular-animate.js"></script>
+    <script src="scripts.js"></script>
 </body>
 </html>

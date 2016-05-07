@@ -15,6 +15,11 @@ body {
   padding: 0;
 }
 
+h2, p {
+  padding: 0;
+  margin: 0;
+}
+
 /* Css File For Header Css */
 body {
   background-color: #f5f5f5;
@@ -27,6 +32,7 @@ body {
 .header {
   background-image: url(/images/holiday-1354563_1920.png);
   background-repeat: no-repeat;
+  background-size: cover;
   padding: 30px 0 30px 0;
 }
 
@@ -65,6 +71,18 @@ body {
   margin-right: 0;
 }
 
+@media (max-width: 768px) {
+  .header-container .row .image {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+  }
+  .header-container .row .image:last-child {
+    margin-right: 0;
+  }
+}
+
 .header-container .row .image img {
   border-radius: 100px;
   border: 5px solid rgba(255, 255, 255, 0.3);
@@ -76,8 +94,13 @@ body {
 
 .header-container .row .image h2 {
   text-shadow: #4294f0;
-  color: #ffffff;
-  padding-top: 0;
+  color: #eeeeee;
+  padding-top: 15px;
+}
+
+.header-container .row .image p {
+  color: #eeeeee;
+  padding-top: 10px;
 }
 
 .header-container .row div.navigation {
@@ -85,14 +108,27 @@ body {
   display: block;
   margin-right: 2.35765%;
   width: 23.23176%;
-  background-color: #333;
-  border-bottom: 1px solid #1a1a1a;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
   min-height: 40px;
   z-index: 999;
 }
 
 .header-container .row div.navigation:last-child {
   margin-right: 0;
+}
+
+@media (max-width: 768px) {
+  .header-container .row div.navigation {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+  }
+  .header-container .row div.navigation:last-child {
+    margin-right: 0;
+  }
 }
 
 .header-container .row div.navigation .navigation-wrapper {
@@ -156,7 +192,7 @@ body {
 }
 
 .header-container .row div.navigation ul li.nav-link {
-  background: #333;
+  background: rgba(0, 0, 0, 0.5);
   display: block;
   line-height: 40px;
   overflow: hidden;
@@ -210,12 +246,25 @@ body {
   margin-right: 0;
 }
 
+@media (max-width: 768px) {
+  .header-container .row .email {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+  }
+  .header-container .row .email:last-child {
+    margin-right: 0;
+  }
+}
+
 .header-container .row .email .email-icon {
   text-align: right;
-  color: #f5f5f5;
-  background-color: #333333;
+  color: #eeeeee;
+  background-color: rgba(0, 0, 0, 0.4);
   padding: 10px;
-  border-radius: 4px;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
 }
 
 .footer-2 {
@@ -295,8 +344,24 @@ body {
   padding-right: 0;
 }
 
+.btn {
+  padding: 10px;
+  border-radius: 0;
+  border: none;
+}
+
+.btn-freelance {
+  background-color: orange;
+  background-image: -webkit-linear-gradient(bottom, orange, orange);
+  background-image: linear-gradient(to top,orange, orange, , , , , , , , );
+  text-transform: uppercase;
+  color: #eeeeee;
+  cursor: pointer;
+  border-bottom: 2px solid chocolate;
+}
+
 .articles {
-  max-width: 800px;
+  max-width: 700px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -310,6 +375,8 @@ body {
 article.type-system-serif {
   font-family: "Merriweather", serif;
   text-align: left;
+  padding: 9em 0;
+  text-align: center;
 }
 
 article.type-system-serif h1, article.type-system-serif h2, article.type-system-serif h3, article.type-system-serif p {
@@ -338,7 +405,7 @@ article.type-system-serif .type {
   border-bottom: 1px solid;
   display: inline-block;
   font-family: "Merriweather Sans", sans-serif;
-  font-size: 0.7em;
+  font-size: 24px;
   font-weight: 700;
   margin-bottom: 2em;
   padding: 0.3em 0;
