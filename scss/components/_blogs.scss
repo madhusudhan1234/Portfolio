@@ -1,0 +1,165 @@
+/*--blog--*/
+.blog {
+  @include outer-container(800px);
+  .row{
+    @include span-columns(12);
+  }
+}
+.blog h4{
+  font-size:24px;
+  color: #000;
+  text-align: left;
+  margin: 0 0 1em;
+}
+.blog h3:after,.blog h3:before{
+  width: 200px;
+  height: 1px;
+  display: inline-block;
+  vertical-align: middle;
+  content:"";
+  background:#000;
+  margin: 0 1%;
+}
+.blog-top h4{
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1.1em;
+  margin: 1em 0 0.3em;
+  color:#27DA93;
+}
+.blog-top h4 a{
+  color: #27DA93;
+  text-decoration: none;
+}
+.blog-top h4 a:hover {
+  color:#000;
+}
+.blog-top h5{
+  color: #A3A3A3;
+  font-size: 10px;
+  text-align:left;
+}
+.blog-top h5 a{
+  color: #A3B1B6;
+}
+.blog-top p{
+  padding:1em 0 0;
+  font-size: 0.9em;
+  color:#a3a3a3;
+  line-height: 2em;
+  text-align: justify;
+}
+.links {
+  padding: 10px 0px;
+  border-top: 1px solid #D9E9ED;
+  border-bottom: 1px solid #D9E9ED;
+  margin: 3em 0;
+}
+ul.blog-links li {
+  display:inline-block;
+  margin-right: 2%;
+}
+ul.blog-links li a {
+  color:#A3B1B6;
+  font-size: 0.85em;
+  padding-left: 10px;
+  vertical-align: sub;
+}
+ul.blog-links li a i{
+  width: 30px;
+  height: 30px;
+  background: #27da93;
+  float: left;
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+  line-height: 2.6em;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -o-border-radius: 100px;
+  font-style:normal;
+}
+/*----*/
+.blog-list li, .blog-list1 li{
+  list-style: none;
+}
+.blog-list li  a{
+  color:#a3a3a3;
+  font-size:0.89em;
+  text-decoration: none;
+  display:block;
+  margin: 0.7em 0;
+}
+.blog-list li a:hover{
+  color:#000;
+}
+.blog-list li i{
+  font-size: 0.8em;
+  padding-right: 4%;
+}
+.blog-list h4,.blog-list1 h4,.blog-list2 h4{
+  font-size:1.4em;
+  color:#27da93;
+  margin-bottom:0.8em;
+  text-transform: uppercase;
+}
+.blog-img{
+  float:left;
+  width:100%;
+}
+.blog-text{
+  float:right;
+  width:55%;
+}
+.blog-text p{
+  font-size:0.8em;
+}
+.blog-text p a{
+  text-decoration: none;
+  color:#000;
+}
+.blog-text p a:hover {
+  color: #27da93;
+}
+.blog-text span{
+  font-size:0.8em;
+  color:#a3a3a3;
+}
+.blog-text span a{
+  text-decoration: none;
+  color:#27DA93;
+}
+.blog-list-top {
+  padding: 0.5em 0 1.5em;
+}
+.blog-list2 ul{
+  padding: 0.5em 0 0;
+}
+.blog-list2 ul li{
+  display: inline-block;
+}
+.blog-list2 ul li a{
+  text-decoration: none;
+  color:#fff;
+  background: #000;
+  font-size: 0.9em;
+  padding: 0.3em 0.5em;
+  display: block;
+  margin: 0 0 0.6em;
+}
+.blog-list2 ul li a:hover {
+  background: #27da93;
+}
+.blog-list,.blog-list1,.blog-list2 {
+  margin: 0 0 1.8em;
+}
+/*
+ul.pagination {
+  border-radius: 0 !important;
+}
+.pagination > .active > a,.pagination > .active > a:hover {
+  background-color: #27da93;
+  border-color: #27da93;
+}*/
+/*--//blog--*/

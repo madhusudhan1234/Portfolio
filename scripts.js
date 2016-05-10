@@ -24,6 +24,11 @@
                 controller  : 'BlogController'
             })
 
+            .when('/blog/web-trends', {
+                templateUrl: 'pages/blog_single1.html',
+                controller: 'BlogFirstController'
+            })
+
             // route for the contact page
             .when('/contact', {
                 templateUrl : 'pages/contact.html',
@@ -39,12 +44,14 @@
     });
 
     scotchApp.controller('BlogController', function($scope) {
-        $scope.message = 'Blog Psots are coming Soon !';
+        $scope.message = 'This is the blog';
         $scope.pageClass = 'page-blog';
     });
-    // home page controller
-
-
+    scotchApp.controller('BlogFirstController', function($scope) {
+        $scope.message = 'Hello This is message';
+        $scope.pageClass = 'page-blog_single';
+    });
+    // Contact page controller
     scotchApp.controller('ContactController', function($scope) {
         $scope.message = 'Contact Me';
         $scope.pageClass = 'page-contact';

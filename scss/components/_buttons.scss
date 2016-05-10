@@ -1,0 +1,27 @@
+.btn{
+  padding:10px;
+  border-radius: 0;
+  border:none;
+}
+.btn-freelance{
+  @include linear-gradient(to top, orange, orange);
+  text-transform: uppercase;
+  color: #eeeeee;
+  cursor: pointer;
+  border-bottom: 2px solid chocolate;
+}
+a.more:hover {
+  color: #fff;
+}
+.hvr-sweep-to-right:hover, .hvr-sweep-to-right:focus, .hvr-sweep-to-right:active {
+  color: white;
+}
+a.more {
+  text-decoration: none;
+  font-size: 0.9em;
+  border: 1px solid #27da93;
+  color: #27da93;
+  padding: 0.3em 0.7em;
+  display: inline-block;
+  margin: 1em 0 0;
+}
